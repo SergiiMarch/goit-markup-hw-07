@@ -104,17 +104,12 @@ img {
   align-items: center;
 }
 
-.main-nav {
+.nav {
   display: flex;
   align-items: center;
 }
 
-.header-box {
-  display: flex;
-  gap: 50px;
-}
-
-.header-text {
+.nav__text {
   padding: 24px 0;
   margin-right: 93px;
   font-family: "Raleway", sans-serif;
@@ -122,6 +117,15 @@ img {
   font-size: 26px;
   line-height: 1.19;
   color: var(--black-text-color);
+}
+
+.nav__link {
+  color: var(--acent-color);
+}
+
+.item {
+  display: flex;
+  gap: 50px;
 }
 
 .current::after {
@@ -139,11 +143,7 @@ img {
     left: 0; */
 }
 
-.text-link {
-  color: var(--acent-color);
-}
-
-.item-link {
+.item__link {
   position: relative;
   padding: 32px 0;
   font-style: normal;
@@ -153,26 +153,26 @@ img {
   color: var(--primary-text-color);
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
-.item-link:hover, .item-link:focus {
+.item__link:hover, .item__link:focus {
   color: var(--acent-color);
 }
 
-.header-contact {
+.page-list {
   display: flex;
   margin-left: auto;
   align-items: center;
 }
 
-.header-list {
+.contacts {
   display: flex;
   gap: 50px;
 }
 
-.header-item {
+.contacts__item {
   margin-right: auto;
 }
 
-.header-link {
+.contacts__link {
   font-style: normal;
   font-weight: 500;
   line-height: 1.14;
@@ -180,7 +180,7 @@ img {
   color: var(--acent-color);
 }
 
-.link-item {
+.contacts__item {
   display: flex;
   align-items: center;
   font-style: normal;
@@ -190,11 +190,11 @@ img {
   color: var(--title-text-color);
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
-.link-item:hover, .link-item:focus {
+.contacts__item:hover, .contacts__item:focus {
   color: var(--acent-color);
 }
 
-.list-link {
+.contacts__link {
   display: flex;
   align-items: center;
   font-style: normal;
@@ -204,11 +204,11 @@ img {
   color: var(--title-text-color);
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
-.list-link:hover, .list-link:focus {
+.contacts__link:hover, .contacts__link:focus {
   color: var(--acent-color);
 }
 
-.header-block-icon {
+.contacts__icon {
   box-sizing: border-box;
   fill: currentColor;
   margin-right: 10px;
@@ -226,7 +226,7 @@ img {
   background-repeat: no-repeat;
 }
 
-.main-title {
+.hero__title {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -240,7 +240,7 @@ img {
   color: var(--white-text-color);
 }
 
-.main-btn {
+.hero__btn {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -259,24 +259,24 @@ img {
   border: none;
   transition: background-color var(--transition-duration) var(--transition-timing-function), color var(--transition-duration) var(--transition-timing-function);
 }
-.main-btn:hover, .main-btn:focus {
+.hero__btn:hover, .hero__btn:focus {
   color: var(--acent-color);
   background-color: var(--white-text-color);
 }
 
-.container-item {
+.advantages-item {
   display: flex;
 }
 
-.item-lists:not(:last-child) {
+.advantages-item__list:not(:last-child) {
   margin-right: 30px;
 }
 
-.item-lists:not(:last-child) {
+.advantages-item__list:not(:last-child) {
   margin-right: 30px;
 }
 
-.item-lists::before {
+.advantages-item__list::before {
   display: block;
   content: "";
   margin-bottom: 30px;
@@ -286,31 +286,31 @@ img {
   border-radius: 4px;
 }
 
-.item-lists:nth-child(1)::before {
+.advantages-item__list:nth-child(1)::before {
   background-image: url(../images/antenna\ 1.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.item-lists:nth-child(2)::before {
+.advantages-item__list:nth-child(2)::before {
   background-image: url(../images/clock.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.item-lists:nth-child(3)::before {
+.advantages-item__list:nth-child(3)::before {
   background-image: url(../images/diagram.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.item-lists:nth-child(4)::before {
+.advantages-item__list:nth-child(4)::before {
   background-image: url(../images/astronaut.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.container-subtitle {
+.advantages-item__subtitle {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -320,7 +320,7 @@ img {
   color: var(--primary-text-color);
 }
 
-.container-text {
+.advantages-item__text {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;

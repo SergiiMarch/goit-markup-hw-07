@@ -1,15 +1,15 @@
-.container-item {
+.advantages-item {
   display: flex;
 }
 
-.item-lists:not(:last-child) {
+.advantages-item__list:not(:last-child) {
   margin-right: 30px;
 }
-.item-lists:not(:last-child) {
+.advantages-item__list:not(:last-child) {
   margin-right: 30px;
 }
 
-.item-lists::before {
+.advantages-item__list::before {
   display: block;
   content: "";
   margin-bottom: 30px;
@@ -21,31 +21,31 @@
   border-radius: 4px;
 }
 
-.item-lists:nth-child(1)::before {
+.advantages-item__list:nth-child(1)::before {
   background-image: url(../images/antenna\ 1.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.item-lists:nth-child(2)::before {
+.advantages-item__list:nth-child(2)::before {
   background-image: url(../images/clock.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.item-lists:nth-child(3)::before {
+.advantages-item__list:nth-child(3)::before {
   background-image: url(../images/diagram.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.item-lists:nth-child(4)::before {
+.advantages-item__list:nth-child(4)::before {
   background-image: url(../images/astronaut.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.container-subtitle {
+.advantages-item__subtitle {
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -56,7 +56,7 @@
   color: var(--primary-text-color);
 }
 
-.container-text {
+.advantages-item__text {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
